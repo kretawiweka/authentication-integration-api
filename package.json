@@ -1,0 +1,8 @@
+{
+  "name": "authentication-integration-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kretawiweka/authentication-integration-api",
+  "author": "kretawiweka <ekanuraga@gmail.com>",
+  "license": "MIT"
+}
