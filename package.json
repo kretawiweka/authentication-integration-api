@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/kretawiweka/authentication-integration-api",
   "author": "kretawiweka <ekanuraga@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  }
 }
