@@ -11,8 +11,7 @@ module.exports = function (router) {
           {
             id: 1,
           },
-          config.JWT_SECRET,
-          { expiresIn: 60 * 60 }
+          config.JWT_SECRET
         ),
       });
     } else {

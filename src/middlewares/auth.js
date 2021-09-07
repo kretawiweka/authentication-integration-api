@@ -2,10 +2,9 @@ var jwt = require("jsonwebtoken");
 var config = require("../config.js");
 
 module.exports = function (req, res, next) {
-  if (
-    req.hasOwnProperty("headers") &&
-    req.headers.hasOwnProperty("authorization")
-  ) {
+  const authHeader = req.headers.authorization;
+
+  if (authHeader) {
     try {
       req.user = jwt.verify(req.headers["authorization"], config.JWT_SECRET);
     } catch (err) {
