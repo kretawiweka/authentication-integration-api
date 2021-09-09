@@ -11,7 +11,8 @@ module.exports = function (router) {
           {
             id: 1,
           },
-          config.JWT_SECRET
+          config.JWT_SECRET,
+          config.JWT_CONFIG
         ),
       });
     } else {
